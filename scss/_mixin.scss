@@ -1,0 +1,116 @@
+@mixin p($var0, $var1, $var2, $var3, $var4, $var5, $var6, $var7, $var8, $var9, $var10){
+    margin-left: $var0;
+    margin-top: $var1;
+    font-family: $var10, sans-serif;
+    font-weight: $var2;
+    font-size: $var3;
+    line-height: $var4;
+    color: $var5;
+    padding-top: $var6;
+    padding-bottom: $var7;
+    padding-left: $var8;
+    padding-right: $var9;
+}
+@mixin padding-left($var1){
+    padding-left: $var1;
+}
+@mixin button($var1, $var2, $var3, $var4, $var5, $var6, $var7, $var8, $var9, $var10){
+    width: $var1;
+    height: $var2;
+    background-color: $var3;
+    color: $var4;
+    margin-left: $var5;
+    margin-top: $var6;
+    border: $var7 $var8 $var9;
+    border-radius: $var10;
+}
+.par_1, .par_2, .par_3, .par_4{
+    @include p(none, 10px, 400, 16px, 18.75px, #757575, none, 30px, none, none, "Roboto")
+}
+.par_1{
+    @include padding-left(70px)
+}
+.par_2{
+    @include padding-left(62px)
+}
+.par_3{
+    @include padding-left(97px)
+}
+.par_4{
+    @include padding-left(92px)
+}
+.par-1, .par-2_2, .par-3-2, .par-4{
+    @include p(none, 30px, 500, 16px, 18.75px, #212121, none, none, none, none, "Roboto")
+}
+.par-1 {
+    @include padding-left(71px)
+}
+
+.par-2_2 {
+    @include padding-left(83px)
+}
+
+.par-3-2 {
+    @include padding-left(70px)
+}
+
+.par-4 {
+    @include padding-left(63px)
+}
+.btn {
+    @include button(216px, 50px, #2196F3, #ffffff, 652px, 30px, 1px, solid, #2196F3, 4px)
+}
+
+.button1 {
+    display: block;
+    @include p(12px, none, 700, 16px, 30px, #ffffff, 8px, none, 23px, none, "Roboto")
+}
+.text{
+    margin-bottom: 50px;
+    text-align: center;
+    @include p(none, 0px, 700, 36px, 42.19px, #212121, 94px, none, none, none, "Roboto")
+}
+.elm3 {
+    @include p(none, 9px, 400, 14px, 24px, #ffffff99, none, none, none, none, "Roboto")
+}
+.logo-2 h2 {
+    @include p(none, none, 700, 26px, 30.52px, #FFFFFF, 60px, none, none, none, "Raleway")
+}
+
+.logo-2 h2 span {
+    @include p(none, none, 700, 26px, 30.52px, #2196f3, 60px, none, none, none, "Raleway")
+}
+.elm1 {
+    @include p(none, none, 500, 14px, 16.41px, #2196F3, none, none, none, none, "Roboto")
+}
+
+.elm2 {
+    @include p(none, none, 500, 14px, 16.41px, #757575, none, none, none, none, "Roboto")
+}
+.logo_elm1 {
+    @include p(none, 8px, 700, 26px, 30.52px, #2196F3, none, none, none, none, "Raleway")
+}
+
+.logo_elm2 {
+    @include p(none, 8px, 700, 26px, 30.52px, #000000, none, none, none, none, "Raleway")
+}
+.adress {
+    @include p(none, 20px, 400, 14px, 24px, #ffffff, none, none, none, none, "Roboto")
+}
+h1 {
+    text-align: center;
+    @include p(none, 20px, 700, 44px, 60px, #ffffff, 200px, none, none, none, "Roboto")
+}
+.menu {
+    gap: 50px;
+    @include p(none, 13px, 500, 14px, 16.41px, none, none, none, none, none, "Roboto")
+}
+.sec_2p {
+    width: 270px;
+    @include p(none, 10px, 400, 14px, 24px, #757575, none, none, none, none, "Roboto")
+}
+
+.color {
+    width: 270px;
+    @include p(none, none, 700, 14px, 24px, #212121, none, none, none, none, "Roboto")
+}
